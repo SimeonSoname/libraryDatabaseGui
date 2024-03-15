@@ -3,6 +3,6 @@ module com.example.librarydatabasegui {
     requires javafx.fxml;
 
 
-    opens com.example.librarydatabasegui to javafx.fxml;
-    exports com.example.librarydatabasegui;
+    opens com.application to javafx.fxml;
+    exports com.application;
 }
