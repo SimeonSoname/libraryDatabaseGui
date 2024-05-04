@@ -1,6 +1,12 @@
 # Read Me - Init Setup
 
+## Description
 
+This is a "simple" project that creates a Java GUI using JavaFX.
+
+The GUI connects to a local SQL Library databse, allows you to add/edit and delete books via the gui.
+
+WIP
 <details><summary>Expand for SQL Script</summary>
 
 ```sql
