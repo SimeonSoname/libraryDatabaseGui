@@ -1,22 +1,20 @@
 package com.application;
 
+import java.util.ArrayList;
+
 // A class to consolidate all the input from the GUI so it's easily accessible by the DatabaseConnector class
 public class BookInput {
 
     private String title;
-    private String author;
+    private ArrayList<String> authors = new ArrayList<>();
+    private String authorsOutput;
     private String isbn;
     private String deweyNum;
     private String publisher;
+    private String genre;
 
     public BookInput() {}
-    public BookInput(String title, String author, String isbn, String deweyNum, String publisher) {
-        this.title = title;
-        this.author = author;
-        this.isbn = isbn;
-        this.deweyNum = deweyNum;
-        this.publisher = publisher;
-    }
+
 
     public String getTitle() {
         return title;
@@ -26,12 +24,12 @@ public class BookInput {
         this.title = title;
     }
 
-    public String getAuthor() {
-        return author;
+    public ArrayList<String> getAuthors() {
+        return authors;
     }
 
-    public void setAuthor(String author) {
-        this.author = author;
+    public void setAuthors(ArrayList<String> authors) {
+        this.authors = authors;
     }
 
     public String getIsbn() {
@@ -56,5 +54,24 @@ public class BookInput {
 
     public void setPublisher(String publisher) {
         this.publisher = publisher;
+    }
+
+    public String getAuthorsOutput() {
+        return authorsOutput;
+    }
+
+    public String getAuthorsOutputColon() {
+       return authorsOutput.replace(",",";");
+    }
+    public void setAuthorOutput(String authorOutput) {
+        this.authorsOutput = authorOutput;
+    }
+
+    public String getGenre() {
+        return genre;
+    }
+
+    public void setGenre(String genre) {
+        this.genre = genre;
     }
 }
